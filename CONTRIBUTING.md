@@ -1,4 +1,6 @@
 # Contributing to SRPG Engine
+Thank you for your intention to contribute to this project. The more people participate, the sooner this project will mature and give benefit to many game developers.
+
 If you have Javascript programming skill and want to contribute to the development of SRPG Engine, please read this.
 If you have found a bug and want to submit a minor patch or a bug report, please read this as well.
 
@@ -25,7 +27,7 @@ Features will only be added when deemed *necessary* for a concrete SRPG_Core to 
 
 ## Contribution as SRPG Engine extension
 Nice. This is how generally contribution to the project.
-We hope that by opening this engine to public, it can become a "side" engine for RPG Maker MV. Any additonal feature between extension should always keep compatibility with other plugins in mind. We intend to reduce compatibility issue between plugins and it should become new tradition in developing MV plugins.
+We hope that by opening this engine to public, it can become a "side" engine for RPG Maker MV. Any additonal feature between extension should keep compatibility with other plugins in mind. We intend to reduce compatibility issue between plugins and we hope it become new culture in developing MV plugins.
 
 If you want to make extension, you can choose how you will contribute to the project:
 ### 1. As part of SRPG Engine project
