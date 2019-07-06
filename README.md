@@ -6,7 +6,6 @@
 [![SRPG Screenshot](https://i.postimg.cc/6phv4qZ8/SRPG-MV.jpg)](https://ryanbram.github.io/srpg_online)
 <p align="center">*Click to try*</p>
 
-[enter image description here](https://i.postimg.cc/6phv4qZ8/SRPG-MV.jpg)
 Our main principle is "**minimum change, emphasis on extensibility**". By making the best use of features that already provided in RPG Maker editor, we aim for a system that not only beginner friendly, but also expandable by javascript extension to ease game developer in adding more unique features for their games.
 
 This project is licensed under [MIT License](https://opensource.org/licenses/MIT).
