@@ -1,4 +1,4 @@
-Extension Plugin List
+# Extension Plugin List
 
 The following list is extension plugins made by several contributors to
 add function of SRPG\_Core or alter some mechanism to suit your needs.
