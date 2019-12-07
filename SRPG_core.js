@@ -1152,7 +1152,7 @@
         var i = 0;
         var array = $gameParty.allMembers();
         $gameMap.events().forEach(function(event) {
-            if (event.isType() === 'actor') {
+            if (event.isType() === 'actor' && !event.isErased()) {
                 var actorId = event.event().meta.id ? Number(event.event().meta.id) : 0;
                 if (actorId > 0) {
                     var actor_unit = $gameActors.actor(actorId);
@@ -1193,7 +1193,7 @@
         $gameVariables.setValue(_existEnemyVarID, 0);
         var i = 0;
         $gameMap.events().forEach(function(event) {
-            if (event.isType() === 'enemy') {
+            if (event.isType() === 'enemy' && !event.isErased()) {
                 var enemyId = event.event().meta.id ? Number(event.event().meta.id) : 1;
                 var enemy_unit = new Game_Enemy(enemyId, 0, 0);
                 if (enemy_unit) {
@@ -3330,6 +3330,9 @@ Game_Interpreter.prototype.unitAddState = function(eventId, stateId) {
                     this._turnEndSprite.visible = false;
                 }
             }
+        } else if (this._turnEndSprite) {
+            this.removeChild(this._turnEndSprite);
+            this._turnEndSprite = null;
         }
     };
 
@@ -3346,7 +3349,7 @@ Game_Interpreter.prototype.unitAddState = function(eventId, stateId) {
 //====================================================================
 // ●Sprite_SrpgMoveTile
 //====================================================================
-    function Sprite_SrpgMoveTile() {
+    window.Sprite_SrpgMoveTile = function() {
         this.initialize.apply(this, arguments);
     }
 
@@ -3551,7 +3554,7 @@ Game_Interpreter.prototype.unitAddState = function(eventId, stateId) {
 //====================================================================
 // ●Window_SrpgStatus
 //====================================================================
-    function Window_SrpgStatus() {
+    window.Window_SrpgStatus = function() {
         this.initialize.apply(this, arguments);
     }
 
@@ -3681,7 +3684,7 @@ Game_Interpreter.prototype.unitAddState = function(eventId, stateId) {
 //====================================================================
 // ●Window_SrpgActorCommandStatus
 //====================================================================
-    function Window_SrpgActorCommandStatus() {
+    window.Window_SrpgActorCommandStatus = function() {
         this.initialize.apply(this, arguments);
     }
 
@@ -3749,7 +3752,7 @@ Game_Interpreter.prototype.unitAddState = function(eventId, stateId) {
 //====================================================================
 // ●Window_SrpgBattleStatus
 //====================================================================
-    function Window_SrpgBattleStatus() {
+    window.Window_SrpgBattleStatus = function() {
         this.initialize.apply(this, arguments);
     }
 
@@ -3930,7 +3933,7 @@ Game_Interpreter.prototype.unitAddState = function(eventId, stateId) {
 //====================================================================
 // ●Window_SrpgBattleResult
 //====================================================================
-    function Window_SrpgBattleResult() {
+    window.Window_SrpgBattleResult = function() {
         this.initialize.apply(this, arguments);
     }
 
@@ -4065,7 +4068,7 @@ Game_Interpreter.prototype.unitAddState = function(eventId, stateId) {
 //====================================================================
 // ●Window_SrpgPrediction
 //====================================================================
-    function Window_SrpgPrediction() {
+    window.Window_SrpgPrediction = function() {
         this.initialize.apply(this, arguments);
     }
 
@@ -4359,7 +4362,7 @@ Game_Interpreter.prototype.unitAddState = function(eventId, stateId) {
 //====================================================================
 // ●Window_SrpgBattle
 //====================================================================
-    function Window_SrpgBattle() {
+    window.Window_SrpgBattle = function() {
         this.initialize.apply(this, arguments);
     }
 
@@ -4475,7 +4478,7 @@ Game_Interpreter.prototype.unitAddState = function(eventId, stateId) {
 //====================================================================
 // ●Window_WinLoseCondition
 //====================================================================
-function Window_WinLoseCondition() {
+window.Window_WinLoseCondition = function() {
     this.initialize.apply(this, arguments);
 }
 
