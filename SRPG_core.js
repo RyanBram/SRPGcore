@@ -7,6 +7,7 @@
 // バグ修正協力 : アンチョビ様　
 //                エビ様　http://www.zf.em-net.ne.jp/~ebi-games/
 //                Tsumio様
+//                Doktor_Q
 //-----------------------------------------------------------------------------
 // copyright 2017 - 2019 Lemon slice all rights reserved.
 // Released under the MIT license.
